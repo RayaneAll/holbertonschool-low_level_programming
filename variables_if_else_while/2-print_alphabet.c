@@ -13,11 +13,11 @@ int main(void)
 	int i;
 
 	i = 0;
-	while(alphabet[i] != '\0')
+	while (alphabet[i] != '\0')
 	{
 		putchar(alphabet[i]);
 		i++;
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
