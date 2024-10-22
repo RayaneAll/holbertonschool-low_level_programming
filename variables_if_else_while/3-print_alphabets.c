@@ -18,11 +18,11 @@ int main(void)
 	{
 		putchar(alphabet[i]);
 		i++;
-	}
-	while (alphabetM[i] != '\0')
-	{
-		putchar(alphabetM[i]);
-		i++;
+		while (alphabetM[i] != '\0')
+		{
+			putchar(alphabetM[i]);
+			i++;
+		}
 	}
 	putchar('\n');
 	return (0);
