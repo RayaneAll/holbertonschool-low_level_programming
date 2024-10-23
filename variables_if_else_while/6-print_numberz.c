@@ -9,16 +9,9 @@
 
 int main(void)
 {
-	int n;
-	int i;
-
-	n = "0123456789";
-	i = 0;
-	while (n[i] != '\0')
+	for (int i = 0; i < 9; i++)
 	{
-		putchar(n[i]);
-		i++;
+		putchar(i);
 	}
-	putchar('\n');
 	return (0);
 }
