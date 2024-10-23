@@ -19,4 +19,5 @@ int main(void)
 	printf("7");
 	printf("8");
 	printf("9\n");
+	return (0);
 }
