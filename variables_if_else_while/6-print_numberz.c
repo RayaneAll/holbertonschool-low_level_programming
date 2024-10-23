@@ -9,14 +9,9 @@
 
 int main(void)
 {
-	int tab[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-	int i;
-
-	i = 0;
-	while (tab[i] != '\0')
+	for (int n = 0; n < 10; n++)
 	{
-		putchar(tab[i]);
-		i++;
+		putchar(n + '0');
 	}
 	putchar('\n');
 	return (0);
