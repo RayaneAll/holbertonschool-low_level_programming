@@ -9,6 +9,6 @@
 
 int main(void)
 {
-	printf("_putchar\n");
+	puts("\_putchar");
 	return (0);
 }
