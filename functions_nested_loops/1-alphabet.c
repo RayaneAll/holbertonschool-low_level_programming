@@ -7,8 +7,17 @@
  * Return: Always 0 (Success)
  */
 
-int main(void)
+void alphabet(void)
 {
-	print_alphabet("abcdefghijklmnopqrstuvwxyz\n");
+	char alph[] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
+
+	i = 0;
+	while (alph[i] != '\0')
+	{
+		_putchar(alph[i]);
+		i++;
+	}
+	_putchar('\n');
 	return (0);
 }
