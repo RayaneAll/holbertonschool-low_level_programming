@@ -6,17 +6,14 @@
 
 void print_alphabet_x10(void)
 {
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+	char alphabet;
 	int i;
-	int j;
 
 	for (i = 0; i < 11; i++)
 	{
-		while (alphabet[j] != '\0')
+		for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 		{
-			_putchar(alphabet[i]);
-			j++;
+			_putchar(alphabet);
 		}
-		i++;
 	}
 }
