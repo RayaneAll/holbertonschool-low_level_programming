@@ -1,10 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point of the program
- *
- * Description: Prints a quote using the print_alphabet function
- * Return: Always 0 (Success)
+ * print_alphabet - imprime alphabet en minucscule, suivi d'un saut de ligne
  */
 
 void print_alphabet(void)
