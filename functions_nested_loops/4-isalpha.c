@@ -1,7 +1,11 @@
 #include "main.h"
 
 /**
- * print_alphabet - imprime alphabet en minucscule, suivi d'un saut de ligne
+ * _isalpha - checks if a character is an alphabet letter.
+ *
+ * @c: the character to check.
+ *
+ * Return: 1 if c is an alphabet letter, 0 otherwise.
  */
 
 int _isalpha(int c)
