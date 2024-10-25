@@ -3,7 +3,7 @@
 /**
  * main - Entry point of the program
  *
- * Description: Prints a quote using the puts function
+ * Description: Prints a quote using the print_alphabet function
  * Return: Always 0 (Success)
  */
 
