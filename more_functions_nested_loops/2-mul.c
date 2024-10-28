@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * mult - Multiplie deux entiers.
+ * mult - multiply numbers
+ * @a : variable for the first number
+ * @b : variable for the seconde number
  *
- * @param a Le premier nombre à multiplier.
- * @param b Le deuxième nombre à multiplier.
- *
- * @return Le produit de a et b.
+ * Descritpion : multiply variable a and variable b
+ * Return: return 0
  */
 
 int mult(int a, int b)
