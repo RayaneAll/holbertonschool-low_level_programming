@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * mult - multiply numbers
+ * mul - multiply numbers
  * @a : variable for the first number
  * @b : variable for the seconde number
  *
@@ -9,7 +9,7 @@
  * Return: return 0
  */
 
-int mult(int a, int b)
+int mul(int a, int b)
 {
 	return (a * b);
 }
