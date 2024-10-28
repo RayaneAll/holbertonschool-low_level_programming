@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * mult - multiplie a par b.
+ * mult - Multiplie deux entiers.
  *
- * a et b: les nombres a multiplier.
+ * @param a Le premier nombre à multiplier.
+ * @param b Le deuxième nombre à multiplier.
  *
- * Return: multiplication de a par b.
+ * @return Le produit de a et b.
  */
 
 int mult(int a, int b)
