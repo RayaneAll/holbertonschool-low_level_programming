@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
 
 /**
  * rev_string - multiply numbers
@@ -15,13 +17,13 @@ void rev_string(char *s)
 	char temp;
 
 	first = 0;
-	last = *s - 1;
+	last = strlen(s) - 1;
 
 	while (first < last)
 	{
-		temp = first;
-		first = last;
-		last = temp;
+		temp = str[first];
+		str[first] = str[last];
+		str[last] = temp;
 		first++;
 		last--;
 	}
