@@ -10,19 +10,19 @@
 
 void rev_string(char *s)
 {
-	int i;
-	int j;
+	int first;
+	int last;
+	char temp;
 
-	i = 0;
-	j = i - 1;
-	while (s[i] != '\0')
+	first = 0;
+	last = *s - 1;
+
+	while (first < last)
 	{
-		i++;
+		temp = first;
+		first = last;
+		last = temp;
+		first++;
+		last--;
 	}
-	_putchar('\n');
-	while (s[j] != s[0])
-	{
-		j--;
-	}
-	_putchar('\n');
 }
