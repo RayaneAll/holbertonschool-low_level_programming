@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * mult - multiply numbers
- * @a : variable for the first number
- * @b : variable for the seconde number
+ * puts_half - multiply numbers
+ * @str : betty
  *
  * Descritpion : multiply variable a and variable b
  * Return: return 0
@@ -11,18 +10,18 @@
 
 void puts_half(char *str)
 {
-	int half;
+	int i;
 
-	half = 0;
-	while (str[half] != '\0')
+	i = 0;
+	while (str[i] != '\0')
 	{
-		half++;
+		i++;
 	}
-	half--;
-	while (str[half] != '\0')
+	i = str / 2;
+	while (str[i] != '\0')
 	{
-		_putchar(str[half]);
-		half++;
+		_putchar(str[i]);
+		i++;
 	}
 	_putchar('\n');
 }
