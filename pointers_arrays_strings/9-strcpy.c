@@ -11,15 +11,14 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int i;
+	char *ptr = destination;
 
-	for (i = 0; i < n && src[i] != aq\0aq ; i++)
+	while (*source != '\0')
 	{
-		dest[i] = src[i];
+		*destination = *source;
+		destination++;
+		source++;
 	}
-	for (; i < n; i++)
-	{
-		dest[i] = aq\0aq;
-	}
-	return (dest);
+	*destination = '\0';
+	return ptr;
 }
