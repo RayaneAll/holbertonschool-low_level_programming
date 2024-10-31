@@ -19,11 +19,11 @@ int _atoi(char *s)
 	positif = 1;
 	while (s[i] != '\0')
 	{
-		while (s[i] == ' ')
+		if (s[i] == ' ')
 		{
 			i++;
 		}
-		while (s[i] == '+' || s[i] == '-')
+		else if (s[i] == '+' || s[i] == '-')
 		{
 			if (s[i] == '-')
 			{
@@ -31,7 +31,7 @@ int _atoi(char *s)
 			}
 			i++;
 		}
-		while (s[i] >= '0' && s[i] <= '9')
+		else if (s[i] >= '0' && s[i] <= '9')
 		{
 			resultat = (resultat * 10) + (s[i] - '0');
 			i++;
