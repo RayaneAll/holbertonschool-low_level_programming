@@ -11,14 +11,14 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	char *ptr = destination;
+	char *ptr = dest;
 
-	while (*source != '\0')
+	while (*src != '\0')
 	{
-		*destination = *source;
-		destination++;
-		source++;
+		*dest = *src;
+		dest++;
+		src++;
 	}
-	*destination = '\0';
+	*dest = '\0';
 	return ptr;
 }
