@@ -17,22 +17,25 @@ int _atoi(char *s)
 	resultat = 0;
 	i = 0;
 	positif = 1;
-	while (s[i] == ' ')
+	while (s[i] != '\0')
 	{
-		i++;
-	}
-	while (s[i] == '+' || s[i] == '-')
-	{
-		if (s[i] == '-')
+		while (s[i] == ' ')
 		{
-			positif = positif * -1;
+			i++;
 		}
-		i++;
-	}
-	while (s[i] >= '0' && s[i] <= '9')
-	{
-		resultat = (resultat * 10) + (s[i] - '0');
-		i++;
+		while (s[i] == '+' || s[i] == '-')
+		{
+			if (s[i] == '-')
+			{
+				positif = positif * -1;
+			}
+			i++;
+		}
+		while (s[i] >= '0' && s[i] <= '9')
+		{
+			resultat = (resultat * 10) + (s[i] - '0');
+			i++;
+		}
 	}
 	resultat = resultat * positif;
 	return (resultat);
