@@ -10,30 +10,35 @@
 
 int _atoi(char *s)
 {
-	int resultat;
-	int i;
-	int positif;
+	int sign;
+	unsigned int num;
+	int started;
 
-	resultat = 0;
-	i = 0;
-	positif = 1;
-	while (s[i] && (s[i] < '0' || s[i] > '9') && s[i] != '+' && s[i] != '-')
-	{
-		i++;
-	}
-	while (s[i] == '+' || s[i] == '-')
+	sign = 1;
+	num = 0;
+	started = 0;
+
+	while (s[i] != '\0')
 	{
 		if (s[i] == '-')
 		{
-			positif = positif * -1;
+			sign = sign * -1;
 		}
-		i++;
+		else if (s[i] >= '0' && s[i] <= '9')
+		{
+			num = (num * 10) + (s[i] - '0');
+			started = 1;
+		}
+		else if (started)
+		{
+			break;
+		}
+		s++;
 	}
-	while (s[i] >= '0' && s[i] <= '9')
+
+	if (sign < 0)
 	{
-		resultat = (resultat * 10) + (s[i] - '0');
-		i++;
+		return (-num);
 	}
-	resultat = resultat * positif;
-	return (resultat);
+	return (num);
 }
