@@ -22,7 +22,7 @@ char *cap_string(char *str)
 			str[i] = str[i] - 32;
 		}
 		cap = 0;
-		if (str[i] == ' ')
+		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n')
 		{
 			cap = 1;
 		}
