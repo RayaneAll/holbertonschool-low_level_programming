@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 /**
  * string_toupper - multiply numbers
