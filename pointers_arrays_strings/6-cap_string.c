@@ -17,19 +17,19 @@ char *cap_string(char *str)
 	{
 		if (str[i] == ',' || str[i] == ';' || str[i] == '.')
 		{
-			str[i] = str[i] - 32;
+			str[i] = str[i + 2] - 32;
 		}
 		else if (str[i] == '!' || str[i] == '?' || str[i] == '"')
 		{
-			str[i] = str[i] - 32;
+			str[i] = str[i + 2] - 32;
 		}
 		else if (str[i] == '(' || str[i] == ')')
 		{
-			str[i] = str[i] - 32;
+			str[i] = str[i + 2] - 32;
 		}
 		else if (str[i] == '{' || str[i] == '}')
 		{
-			str[i] = str[i] - 32;
+			str[i] = str[i + 2] - 32;
 		}
 		else
 		{
