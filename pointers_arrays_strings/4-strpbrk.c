@@ -2,9 +2,9 @@
 #include <stddef.h>
 
 /**
- * mult - multiply numbers
- * @a : variable for the first number
- * @b : variable for the seconde number
+ * _strpbrk - multiply numbers
+ * @s : variable for the first number
+ * @accept : variable for the seconde number
  *
  * Descritpion : multiply variable a and variable b
  * Return: return 0
@@ -12,8 +12,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	do
-	{
+	do {
 		if (*accept++ == *s)
 		{
 			return (s);

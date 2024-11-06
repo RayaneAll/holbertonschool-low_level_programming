@@ -2,9 +2,9 @@
 #include <stddef.h>
 
 /**
- * mult - multiply numbers
- * @a : variable for the first number
- * @b : variable for the seconde number
+ * _strstr - multiply numbers
+ * @haystack : variable for the first number
+ * @needle : variable for the seconde number
  *
  * Descritpion : multiply variable a and variable b
  * Return: return 0
