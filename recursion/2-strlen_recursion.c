@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * mult - multiply numbers
- * @a : variable for the first number
- * @b : variable for the seconde number
+ * _strlen_recursion - multiply numbers
+ * @s : variable for the first number
  *
  * Descritpion : multiply variable a and variable b
  * Return: return 0
