@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * mult - multiply numbers
- * @a : variable for the first number
- * @b : variable for the seconde number
+ * factorial - multiply numbers
+ * @n : variable for the first number
  *
  * Descritpion : multiply variable a and variable b
  * Return: return 0
