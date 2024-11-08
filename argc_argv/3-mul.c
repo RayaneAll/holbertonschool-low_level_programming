@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * mult - multiply numbers
- * @a : variable for the first number
- * @b : variable for the seconde number
+ * main - multiply numbers
+ * @argc : variable for the first number
+ * @argv : variable for the seconde number
  *
  * Descritpion : multiply variable a and variable b
  * Return: return 0
