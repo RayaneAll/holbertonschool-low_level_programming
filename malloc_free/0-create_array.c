@@ -19,7 +19,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (0);
 	}
-	tab = (char *) malloc(size * sizeof(char) + 1);
+	tab = (char *) malloc(size * sizeof(char));
 	if (tab == 0)
 	{
 		return (0);
