@@ -2,9 +2,8 @@
 #include <stdlib.h>
 
 /**
- * mult - multiply numbers
- * @a : variable for the first number
- * @b : variable for the seconde number
+ * _strdup - multiply numbers
+ * @str : variable for the seconde number
  *
  * Descritpion : multiply variable a and variable b
  * Return: return 0
@@ -13,23 +12,27 @@
 char *_strdup(char *str)
 {
 	char *dest;
+	int i;
+	int len;
 
-	dest = malloc(*str);
-	if (str == 0)
+	len = 0;
+	if (str == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
-	if (dest == 0)
+	while (str[len] != '\0')
 	{
-		return (0);
+		len++;
 	}
-	while (*str != '\0')
+	dest = (char *) malloc(sizeof(char) * (len + 1));
+	if (dest == NULL)
 	{
-		*dest = *str;
-		dest++;
-		str++;
+		return (NULL);
 	}
-	*dest = '\0';
+	for (i = 0; i < len; i++)
+	{
+		dest[i] = str[i];
+	}
+	dest[len] = '\0';
 	return (dest);
-	free(dest);
 }
