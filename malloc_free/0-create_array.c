@@ -28,6 +28,7 @@ char *create_array(unsigned int size, char c)
 	{
 		tab[i] = c;
 	}
+	tab[i] = '\0';
 	return (tab);
 	free(tab);
 }
