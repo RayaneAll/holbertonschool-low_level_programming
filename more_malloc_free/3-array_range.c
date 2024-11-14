@@ -12,23 +12,23 @@
 
 int *array_range(int min, int max)
 {
-    int *tab;
-    int i;
-    int size;
+	int *tab;
+	int i;
+	int size;
 
-    if (min > max)
-    {
-        return (NULL);
-    }
-    size = max - min + 1;
-    tab = malloc(size * sizeof(int));
-    if (tab == NULL)
-    {
-        return (NULL);
-    }
-    for (i = 0; i < size; i++)
-    {
-        tab[i] = min + i;
-    }
-    return (tab);
+	if (min > max)
+	{
+		return (NULL);
+	}
+	size = max - min + 1;
+	tab = malloc(size * sizeof(int));
+	if (tab == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; i < size; i++)
+	{
+		tab[i] = min + i;
+	}
+	return (tab);
 }
