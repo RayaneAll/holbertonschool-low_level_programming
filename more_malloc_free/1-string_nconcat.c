@@ -1,14 +1,34 @@
 #include <stdlib.h>
-#include <string.h>
 #include "main.h"
 
 /**
- * string_nconcat - concatène deux chaînes de caractères
- * @s1: la première chaîne
- * @s2: la deuxième chaîne
- * @n: le nombre de caractères de s2 à concaténer
+ * _str_len - multiply numbers
+ * @str : variable for the first number
  *
- * Return: un pointeur vers la nouvelle chaîne, ou NULL en cas d'échec
+ * Descritpion : multiply variable a and variable b
+ * Return: return 0
+ */
+
+unsigned int _str_len(char *str)
+{
+    unsigned int length;
+
+    length = 0;
+    while (str[length] != '\0')
+    {
+        length++;
+    }
+    return (length);
+}
+
+/**
+ * string_nconcat - multiply numbers
+ * @s1 : variable for the first number
+ * @s2 : variable for the seconde number
+ * @n : betty
+ *
+ * Descritpion : multiply variable a and variable b
+ * Return: return 0
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -27,8 +47,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
     {
         s2 = "";
     }
-    len1 = strlen(s1);
-    len2 = strlen(s2);
+    len1 = _str_len(s1);
+    len2 = _str_len(s2);
     if (n >= len2)
     {
         n = len2;
@@ -47,6 +67,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
         result[i + j] = s2[j];
     }
     result[i + j] = '\0';
-
     return (result);
 }
