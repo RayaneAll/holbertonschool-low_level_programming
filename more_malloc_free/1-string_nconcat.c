@@ -3,13 +3,12 @@
 #include "main.h"
 
 /**
- * string_nconcat - multiply numbers
- * @s1 : variable for the first number
- * @s2 : variable for the seconde number
- * @n : betty
+ * string_nconcat - concatène deux chaînes de caractères
+ * @s1: la première chaîne
+ * @s2: la deuxième chaîne
+ * @n: le nombre de caractères de s2 à concaténer
  *
- * Descritpion : multiply variable a and variable b
- * Return: return 0
+ * Return: un pointeur vers la nouvelle chaîne, ou NULL en cas d'échec
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
