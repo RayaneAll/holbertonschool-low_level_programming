@@ -10,10 +10,11 @@
  * Description: Longer description
  */
 
-struct dog {
-    char *name;
-    float age;
-    char *owner;
+struct dog
+{
+char *name;
+float age;
+char *owner;
 };
 
-#endif /* DOG_H */
+#endif
