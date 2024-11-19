@@ -1,13 +1,10 @@
-#include "function_pointers.h"
 #include <stdio.h>
+#include "function_pointers.h"
 
 /**
- * print_name - multiply numbers
- * @name : variable for the first number
- * @f : variable for the seconde number
- *
- * Descritpion : multiply variable a and variable b
- * Return: return 0
+ * print_name - prints a name as is
+ * @name : name of the person
+ * @f : name pour la description
  */
 
 void print_name(char *name, void (*f)(char *))
