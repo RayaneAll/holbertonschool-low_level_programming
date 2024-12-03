@@ -1,6 +1,5 @@
 #include "lists.h"
 #include <stdio.h>
-#include <string.h>
 
 /**
 * print_list - multiply numbers
@@ -27,4 +26,5 @@ size_t print_list(const list_t *h)
 			h->next;
 		}
 	}
+	return (count);
 }
