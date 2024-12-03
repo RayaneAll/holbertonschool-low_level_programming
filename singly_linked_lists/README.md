@@ -1,3 +1,4 @@
+# singly_linked_lists
 When to Use Linked Lists vs Arrays
 Advantages of Arrays:
 Random Access: Arrays provide constant-time access to any element using an index (O(1)).
